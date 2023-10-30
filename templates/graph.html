@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+</body>
+<script>
+    var ctx = document.getElementById('myChart').getContext('2d');
+    var data = {
+      labels: ['January', 'February', 'March', 'April', 'May'],
+      datasets: [
+        {
+          label: 'Sample Data',
+          data: [12, 19, 3, 5, 2],
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderColor: 'rgba(75, 192, 192, 1)',
+          borderWidth: 1
+        }
+      ]
+    };
+  
+    var config = {
+      type: 'line',
+      data: data,
+    };
+  
+    var myChart = new Chart(ctx, config);
+  </script>
+<script>
+    var data = {{ data|safe }};
+    // Rest of the JavaScript code to create the graph using the data.
+  </script>
+    
+</html>

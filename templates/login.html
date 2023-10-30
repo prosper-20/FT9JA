@@ -1,0 +1,66 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'fonts/icomoon/style.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <title>Login | FT9JA Account</title>
+  </head>
+  <body>
+  
+
+  <div class="d-lg-flex half">
+    <!-- <div class="bg order-1 order-md-2" style="background-image: url('/static/images/bg_1.jpg');"></div> -->
+    <div class="bg order-1 order-md-2" style="background-image: url('data:image/png;base64,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');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            {% for message in messages %}
+            <h3>{{ message }}</h3>
+            {% endfor %}
+            <h3>Login to <strong>FT9JA</strong></h3>
+            <form action="#" method="post">
+              {% csrf_token %}
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input name="username" type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+              </div>
+              <div class="form-group last mb-3">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" placeholder="Your Password" id="password">
+              </div>
+
+              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+  </body>
+</html>
