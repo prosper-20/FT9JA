@@ -1,0 +1,1 @@
+web: gunicorn DEMO.wsgi
